@@ -1,0 +1,278 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    background-color: #FDFCEF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 120px;
+} 
+
+p {
+    line-height: 1.37em;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.4em;
+    margin: 0;
+}
+
+.header {
+    padding-top: 60px;
+}
+
+.logo {
+    margin: 0;
+    width: 182px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.hero-image {
+    width: 465px;
+    height: 465px;
+    border-radius: 70px;
+}
+
+.button {
+    color: #fff;
+    font-weight: 700;
+    background: #FF6861;
+    border-radius: 100px;
+    text-decoration: none;
+    padding: 22px 0;
+    line-height: 1.37em;
+    display: block;
+    width: 227px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background: #be342d;
+}
+
+.hero-text {
+    width: 465px;
+}
+
+.intro {
+    margin: 30px 0;
+    width: 423px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 82px;
+}
+
+.feature-digit {
+    width: 73px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.feature:hover .feature-digit {
+    width: 100px;
+    height: 100px;
+}
+
+.feature-title {
+    font-size: 30px;
+    margin-bottom: 11px;
+}
+
+.feature {
+    display: flex;
+    gap: 34px;
+    align-items: center;
+}
+
+.features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.action-wrap {
+    background: linear-gradient(102deg, #FFF6DF 17.38%, #FFDFDE 81.25%);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 76px 125px 75px 122px;
+    gap: 101px;
+}
+
+.hero-text h2 {
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.action-wrap .hero-text {
+    width: 475px;
+}
+
+.action-wrap .hero-text .intro {
+    margin: 24px 0;
+    width: 371px;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.action-wrap .action-image {
+    width: 287px;
+    animation: 5s linear 0s normal none infinite running rot;
+}
+
+.credits {
+    font-size: 15px;
+    text-align: center;
+}
+
+.footer {
+    padding: 120px 0;
+}
+
+/* Responsive */
+
+/* Large: 992 - 1199px */
+@media (max-width: 1199px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+/* Medium: 768 - 991px */
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+    .logo {
+        display: flex;
+        margin: 0 auto;
+    }
+    .wrapper {
+        flex-flow: column-reverse;
+        text-align: center;
+        gap: 51px;
+        margin-top: 79px;
+    }
+    .hero-text {
+        width: auto;
+    }
+    .intro {
+        width: auto;
+    }
+    .button {
+        margin: 0 auto;
+    }
+    .action-wrap {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 101px 144px;
+    }
+    .hero-text h2 {
+        text-align: center;
+    }
+    .action-wrap .hero-text .intro {
+        margin: 24px auto;
+    }
+}
+
+/* Small: 576 - 767px */
+@media (max-width: 767px) {
+    .container {
+        max-width: 540px;
+    }
+    .feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    .features-container {
+        width: auto;
+    }
+    .action-wrap {
+        gap: 50px;
+    }
+}
+
+/* Extra small: 0px (320px) - 575px */
+@media (max-width: 575px) {
+    .container {
+        padding: 0 15px;
+    }
+    .hero-image {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .hero-text {
+        width: auto;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .action-wrap .action-image {
+        width: 201px;
+    }
+    .action-wrap {
+        padding: 70px 20px;
+    }
+    .action-wrap .hero-text {
+        width: 100%;
+    }
+    .action-wrap .hero-text .intro {
+        width: auto;
+    }
+    section {
+        padding-top: 90px;
+    } 
+    .footer {
+        padding: 90px 0;
+    }
+    .wrapper {
+        margin-top: 50px;
+    }
+}
